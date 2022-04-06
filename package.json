@@ -1,0 +1,11 @@
+{
+  "name": "cerqueiraleite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "browser-sync start --proxy 'localhost:8888/cerqueiraleite/' --files '**/*' --no-inject-changes"
+  },
+  "author": "",
+  "license": "ISC"
+}
