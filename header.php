@@ -14,10 +14,34 @@
 	<!-- Wordpress Header -->
 	<?php wp_head(); ?>
 	<!-- Wordpress Header -->
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Questrial&display=swap" rel="stylesheet">
+	<!-- Fonts -->
 </head>
 
 <body>
 
 	<header class="header">
-		<p>Esse é o header</p>
+		<div class="container">
+			<div class="header-top">
+				<a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-cerqueira.png" alt=""></a>
+				<nav class="header-menu">
+					<?php
+						$args = array(
+							'menu' => 'principal',
+							'container' => false
+						);
+						wp_nav_menu($args);
+					?>
+				</nav>
+			</div>
+			<div class="header-main">
+				<h1>Excelência em Direito Corporativo</h1>
+				<p>Com uma abordagem equilibrada e moderna entregamos resultados consistentes</p>
+				<a class="cta" href="">Fale com um advogado</a>		
+			</div>
+		</div>
 	</header>
