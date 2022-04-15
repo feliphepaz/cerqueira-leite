@@ -1,38 +1,52 @@
 :root {
-    --white: #fff;
-    --gray: #a3a5b7;
-    --golden: #CD9E51;
-    --questrial: 'Questrial', sans-serif;
-    --poppins: 'Poppins', sans-serif;
-    --fontDisplay: 78px;
-    --fontSubtitle: 24px;
-    --fontText: 16px;
+  --white: #fff;
+  --gray: #a3a5b7;
+  --grayLight: #e5e6ef;
+  --blue: #00366a;
+  --golden: #cd9e51;
+  --questrial: "Questrial", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --fontDisplay: 78px;
+  --fontTitle: 50px;
+  --fontSubtitle: 24px;
+  --fontTextTitle: 18px;
+  --fontText: 16px;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--grayLight);
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 40px;
 }
 
 .cta {
-    display: table;
-    border-radius: 10px;
-    color: var(--white);
-    background: var(--golden);
-    text-decoration: none;
-    font-family: var(--questrial);
-    font-size: var(--fontText);
-    text-transform: uppercase;
-    padding: 20px;
+  display: table;
+  border-radius: 10px;
+  color: var(--white);
+  background: var(--golden);
+  text-decoration: none;
+  font-family: var(--questrial);
+  font-size: var(--fontText);
+  text-transform: uppercase;
+  padding: 20px;
 }
 
+.title {
+  font-family: var(--questrial);
+  font-size: var(--fontTitle);
+  color: var(--gray);
+  text-align: center;
+}

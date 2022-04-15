@@ -20,6 +20,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Questrial&display=swap" rel="stylesheet">
 	<!-- Fonts -->
+
+	<!-- Swiper Styles -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+	<!-- Swiper Styles -->
 </head>
 
 <body>
