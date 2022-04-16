@@ -52,6 +52,16 @@
 				<?php if (is_page_template('page-sobre.php')) { ?>
 					<h1>Conheça o Cerqueira Leite</h1>
 				<?php } ?>	
+
+				<?php if (is_page_template('page-equipe.php')) { ?>
+					<h1>Quem faz tudo acontecer</h1>
+					<p>Por trás de cada case de sucesso, existe uma equipe de advogados e staff dedicados</p>
+				<?php } ?>
+
+				<?php if (is_page_template('page-especialidades.php')) { ?>
+					<h1>Somos especialistas em direito corporativo</h1>
+					<p>O Cerqueira Leite Advogados Associados é formado por profissionais do mais alto nível, preparados para atender às mais diversas demandas do mundo empresarial. Está procurando uma área de atuação em específico? Procure na lista abaixo e clique para saber mais</p>
+				<?php } ?>
 			</div>
 		</div>
 	</header>

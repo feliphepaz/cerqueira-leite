@@ -70,3 +70,27 @@ img {
   letter-spacing: 1px;
   border-radius: 10px;
 }
+
+.sobre,
+.especialidades {
+  margin-top: 60px;
+}
+
+.sobre .container p {
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: var(--questrial);
+  font-size: var(--fontText);
+}
+
+.sobre .container p strong {
+  color: var(--blue);
+}
+
+.sobre .container p + p {
+  margin-top: 20px;
+}
+
+.sobre .container figure {
+  margin-top: 20px;
+}

@@ -87,7 +87,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--blue);
+  background-size: cover !important;
   width: calc(33.33% - 20px);
   margin: 10px;
   height: 200px;
@@ -102,6 +102,10 @@
 
 .home-especialidade-detail {
   display: none;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .home-especialidade-detail h4 {
@@ -116,6 +120,7 @@
   font-size: var(--fontText);
   color: var(--gray);
   margin: 20px 0px;
+  text-align: center;
 }
 
 .home-especialidade-detail .cta {
@@ -127,8 +132,11 @@
 }
 
 .list-especialidades li:hover .home-especialidade-detail {
-  animation: show 1s forwards;
-  display: block;
+  animation: show 0.5s forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes show {

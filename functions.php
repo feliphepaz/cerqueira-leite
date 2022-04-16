@@ -78,12 +78,6 @@ function cmb2_fields_home() {
 		'name' => 'Imagem ',
 		'id' => 'imagem_especialista',
 		'type' => 'file',
-		'query_args' => array(
-			'type' => array(
-			    'image/jpeg',
-			    'image/png',
-			),
-		),
 	]);
 
 	$especialidades = $cmb->add_field([
@@ -95,7 +89,6 @@ function cmb2_fields_home() {
 			'group_title' => 'Especialidade {#}',
 			'add_button' => 'Adicionar Especialidade',
 			'sortable' => true,
-			'limit' => 9
 		]
 	]);
 
@@ -115,12 +108,12 @@ function cmb2_fields_home() {
 		'name' => 'Imagem',
 		'id' => 'imagem_especialidade',
 		'type' => 'file',
-		'query_args' => array(
-			'type' => array(
-			    'image/jpeg',
-			    'image/png',
-			),
-		),
+	]);
+
+	$cmb->add_group_field($especialidades, [
+		'name' => 'Link',
+		'id' => 'link_especialidade',
+		'type' => 'text_url',
 	]);
 }
 
