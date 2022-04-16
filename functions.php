@@ -31,6 +31,13 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 
 add_theme_support('menus');
 
+// Habilitar Thumbnails
+
+function ed_support_thumbnails() {
+    add_theme_support('post-thumbnails'); // thumbnails
+}
+add_action('after_setup_theme', 'ed_support_thumbnails');
+
 // CMB2 Fields
 
 function get_field($key, $page_id = 0) {

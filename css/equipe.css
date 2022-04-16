@@ -5,8 +5,16 @@
 .lideres-text {
   font-family: var(--questrial);
   font-size: var(--fontText);
-  color: var(--gray);
+  color: var(--gray) !important;
   text-align: center;
   margin-top: 20px;
   margin-bottom: -10px;
+}
+
+.contato .lideres-text {
+  margin-bottom: 40px;
+}
+
+.contato .title {
+  margin-top: 60px;
 }

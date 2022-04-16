@@ -182,6 +182,7 @@
 .home-contato form input[type="text"],
 .home-contato form input[type="tel"],
 .home-contato form input[type="email"],
+.home-contato form input[type="file"],
 .home-contato form select {
   background: rgba(255, 255, 255, 0.7);
   border: none;

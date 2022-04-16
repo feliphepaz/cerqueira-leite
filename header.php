@@ -62,6 +62,18 @@
 					<h1>Somos especialistas em direito corporativo</h1>
 					<p>O Cerqueira Leite Advogados Associados é formado por profissionais do mais alto nível, preparados para atender às mais diversas demandas do mundo empresarial. Está procurando uma área de atuação em específico? Procure na lista abaixo e clique para saber mais</p>
 				<?php } ?>
+
+				<?php if (is_page_template('page-imprensa.php')) { ?>
+					<h1>Saiu na imprensa</h1>
+				<?php } ?>
+
+				<?php if (is_home()) { ?>
+					<h1>O que nossos especialistas já publicaram</h1>
+				<?php } ?>
+
+				<?php if (is_page_template('page-contato.php')) { ?>
+					<h1>Fale com um especialista</h1>
+				<?php } ?>
 			</div>
 		</div>
 	</header>

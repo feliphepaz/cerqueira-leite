@@ -1,5 +1,6 @@
 :root {
   --white: #fff;
+  --black: #000;
   --gray: #a3a5b7;
   --grayLight: #e5e6ef;
   --blue: #00366a;
@@ -72,7 +73,9 @@ img {
 }
 
 .sobre,
-.especialidades {
+.especialidades,
+.posts,
+.contato {
   margin-top: 60px;
 }
 
