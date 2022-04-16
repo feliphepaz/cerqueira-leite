@@ -42,7 +42,7 @@ add_action('cmb2_admin_init', 'cmb2_fields_home');
 function cmb2_fields_home() {
 	$cmb = new_cmb2_box([
 		'id' => 'home_box',
-		'title' => 'SLIDE DOS ESPECIALISTAS',
+		'title' => 'CUSTOM FIELDS DA HOME',
 		'object_types' => ['page'],
 		'show_on' => [
 			'key' => 'page-template',
@@ -50,8 +50,8 @@ function cmb2_fields_home() {
 		],
 	]);
 
-	$pratos = $cmb->add_field([
-		'name' => 'Especialistas',
+	$especialistas = $cmb->add_field([
+		'name' => 'Slide dos Especialistas',
 		'id' => 'especialistas',
 		'type' => 'group',
 		'repeatable' => true,
@@ -62,21 +62,58 @@ function cmb2_fields_home() {
 		]
 	]);
 
-	$cmb->add_group_field($pratos, [
+	$cmb->add_group_field($especialistas, [
 		'name' => 'Nome',
-		'id' => 'nome',
+		'id' => 'nome_especialista',
 		'type' => 'text',
 	]);
 
-	$cmb->add_group_field($pratos, [
+	$cmb->add_group_field($especialistas, [
 		'name' => 'Descrição',
-		'id' => 'descricao',
+		'id' => 'descricao_especialista',
 		'type' => 'textarea',
 	]);
 
-	$cmb->add_group_field($pratos, [
+	$cmb->add_group_field($especialistas, [
+		'name' => 'Imagem ',
+		'id' => 'imagem_especialista',
+		'type' => 'file',
+		'query_args' => array(
+			'type' => array(
+			    'image/jpeg',
+			    'image/png',
+			),
+		),
+	]);
+
+	$especialidades = $cmb->add_field([
+		'name' => 'Tags das Especialidades',
+		'id' => 'especialidades',
+		'type' => 'group',
+		'repeatable' => true,
+		'options' => [
+			'group_title' => 'Especialidade {#}',
+			'add_button' => 'Adicionar Especialidade',
+			'sortable' => true,
+			'limit' => 9
+		]
+	]);
+
+	$cmb->add_group_field($especialidades, [
+		'name' => 'Nome',
+		'id' => 'nome_especialidade',
+		'type' => 'text',
+	]);
+
+	$cmb->add_group_field($especialidades, [
+		'name' => 'Chamada',
+		'id' => 'chamada_especialidade',
+		'type' => 'text',
+	]);
+
+	$cmb->add_group_field($especialidades, [
 		'name' => 'Imagem',
-		'id' => 'imagem',
+		'id' => 'imagem_especialidade',
 		'type' => 'file',
 		'query_args' => array(
 			'type' => array(

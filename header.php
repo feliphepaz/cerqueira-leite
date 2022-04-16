@@ -31,7 +31,7 @@
 	<header class="header">
 		<div class="container">
 			<div class="header-top">
-				<a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-cerqueira.png" alt=""></a>
+				<a href="/cerqueiraleite"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-cerqueira.png" alt=""></a>
 				<nav class="header-menu">
 					<?php
 						$args = array(
@@ -43,9 +43,15 @@
 				</nav>
 			</div>
 			<div class="header-main">
-				<h1>Excelência em Direito Corporativo</h1>
-				<p>Com uma abordagem equilibrada e moderna entregamos resultados consistentes</p>
-				<a class="cta" href="">Fale com um advogado</a>		
+				<?php if (is_page_template('page-home.php')) { ?>
+					<h1>Excelência em Direito Corporativo</h1>
+					<p>Com uma abordagem equilibrada e moderna entregamos resultados consistentes</p>
+					<a class="cta" href="">Fale com um advogado</a>	
+				<?php } ?>	
+
+				<?php if (is_page_template('page-sobre.php')) { ?>
+					<h1>Conheça o Cerqueira Leite</h1>
+				<?php } ?>	
 			</div>
 		</div>
 	</header>

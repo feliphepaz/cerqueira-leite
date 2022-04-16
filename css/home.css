@@ -5,6 +5,7 @@
 .swiper {
   height: 520px;
   margin-top: 60px;
+  margin-bottom: 60px !important;
 }
 
 .swiper-slide {
@@ -41,4 +42,158 @@
 
 .swiper-pagination-bullet-active {
   background: var(--golden) !important;
+}
+
+.home-cta {
+  background: url(../assets/cover-cta.png) center center no-repeat;
+  background-size: cover;
+  padding: 60px 0px;
+}
+
+.home-cta h2 {
+  color: var(--white);
+}
+
+.home-cta p {
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: var(--questrial);
+  font-size: var(--fontTextTitle);
+  color: var(--white);
+  text-align: center;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+.home-cta .cta {
+  margin: 0 auto;
+}
+
+.home-especialidades {
+  margin: 100px 0px;
+}
+
+.home-especialidades .title {
+  margin-bottom: 60px;
+}
+
+.list-especialidades {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.list-especialidades li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue);
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.list-especialidades li h3 {
+  font-family: var(--questrial);
+  font-size: var(--fontSubtitle);
+  color: var(--white);
+}
+
+.home-especialidade-detail {
+  display: none;
+}
+
+.home-especialidade-detail h4 {
+  font-family: var(--questrial);
+  font-size: var(--fontSubtitle);
+  color: var(--white);
+  text-align: center;
+}
+
+.home-especialidade-detail p {
+  font-family: var(--questrial);
+  font-size: var(--fontText);
+  color: var(--gray);
+  margin: 20px 0px;
+}
+
+.home-especialidade-detail .cta {
+  margin: 0 auto;
+}
+
+.list-especialidades li:hover h3 {
+  display: none;
+}
+
+.list-especialidades li:hover .home-especialidade-detail {
+  animation: show 1s forwards;
+  display: block;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home-especialidades .btn {
+  margin-top: 60px;
+}
+
+.home-contato .container > div {
+  background: var(--blue);
+  padding: 100px 220px;
+  border-radius: 10px;
+}
+
+.home-contato h3 {
+  font-family: var(--questrial);
+  font-size: var(--fontTitle);
+  color: var(--white);
+  text-align: center;
+}
+
+.home-contato p {
+  font-family: var(--questrial);
+  font-size: var(--fontText);
+  color: var(--white);
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.home-contato form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.home-contato form input[type="text"],
+.home-contato form input[type="tel"],
+.home-contato form input[type="email"],
+.home-contato form select {
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 20px 10px;
+  outline: none;
+  font-size: var(--fontText);
+  font-family: var(--questrial);
+}
+
+.home-contato form input[type="submit"] {
+  display: table;
+  border-radius: 10px;
+  color: var(--white);
+  background: var(--golden);
+  text-decoration: none;
+  font-family: var(--questrial);
+  font-size: var(--fontText);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
 }

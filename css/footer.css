@@ -1,0 +1,56 @@
+.footer {
+  margin-top: 100px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer .container div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 250px;
+}
+
+.footer-redes {
+  margin-top: 5px;
+}
+
+.footer-redes ul {
+  display: flex;
+}
+
+.footer-redes ul li + li {
+  margin-left: 10px;
+}
+
+.footer-redes ul li a img {
+  width: 20px;
+}
+
+.footer .container p,
+.footer .container div:last-child a {
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: var(--questrial);
+  font-size: var(--fontText);
+  color: var(--gray);
+}
+
+.copyright {
+  padding: 30px 0px 10px 0px;
+}
+
+.copyright legend {
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: var(--poppins);
+  font-size: var(--fontLegend);
+  color: var(--gray);
+}
