@@ -26,9 +26,12 @@
 	<!-- Swiper Styles -->
 </head>
 
-<body>
-
-	<header class="header">
+<body <?php body_class(); ?>>
+	<?php if (is_page_template('page-especialidade.php')) { ?>
+		<header class="header" style="background: url('<?= the_post_thumbnail_url() ?>') center center no-repeat; background-size: cover">
+	<?php } else { ?>
+		<header class="header">
+	<?php } ?>
 		<div class="container">
 			<div class="header-top">
 				<a href="/cerqueiraleite"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-cerqueira.png" alt=""></a>
@@ -40,6 +43,20 @@
 						);
 						wp_nav_menu($args);
 					?>
+					<nav class="midia-menu">
+						<span>X</span>
+						<ul>
+							<li>
+								<a href="/cerqueiraleite/artigos">Artigos</a>
+							</li>
+							<li>
+								<a href="/cerqueiraleite/imprensa">Saiu na Imprensa</a>
+							</li>
+							<li>
+								<a href="/cerqueiraleite/videos">Vídeos</a>
+							</li>
+						</ul>
+					</nav>
 				</nav>
 			</div>
 			<div class="header-main">
@@ -73,6 +90,15 @@
 
 				<?php if (is_page_template('page-contato.php')) { ?>
 					<h1>Fale com um especialista</h1>
+				<?php } ?>
+
+				<?php if (is_page_template('page-especialidade.php')) { ?>
+					<h1><?php the_title() ?></h1>
+				<?php } ?>
+
+				<?php if (is_page_template('page-videos.php')) { ?>
+					<h1>Vídeos</h1>
+					<p>Conteúdo em vídeo de autoria ou participação do Cerqueira Leite</p>
 				<?php } ?>
 			</div>
 		</div>

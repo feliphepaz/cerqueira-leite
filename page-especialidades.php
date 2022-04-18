@@ -16,7 +16,7 @@ get_header();
                 <div class="home-especialidade-detail">
                     <h4><?= $especialidade['nome_especialidade']; ?></h4>
                     <p><?= $especialidade['chamada_especialidade']; ?></p>
-                    <a class="cta" href="<?= $especialidade['link_especialidade']; ?>">Entre em contato</a>	
+                    <a class="cta" href="<?= $especialidade['link_especialidade']; ?>">Saiba Mais</a>	
                 </div>
             </li>
             <?php } } ?>

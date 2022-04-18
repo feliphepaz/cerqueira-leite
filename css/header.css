@@ -47,3 +47,62 @@
   font-size: var(--fontSubtitle);
   margin-bottom: 30px;
 }
+
+.header-menu {
+  position: relative;
+}
+
+.midia-menu {
+  display: none;
+  background: var(--black);
+  position: absolute;
+  right: 20px;
+  margin-top: 10px;
+  border-left: 10px solid var(--black);
+}
+
+.midia-menu span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  background: var(--black);
+  border-radius: 100%;
+  color: var(--white);
+  font-family: var(--questrial);
+  font-size: var(--fontLegend);
+}
+
+.midia-menu.active {
+  display: block !important;
+}
+
+.midia-menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.midia-menu ul li + li {
+  margin-left: 0px;
+}
+
+.midia-menu ul li a {
+  display: block;
+  background: var(--blue);
+  width: 100%;
+  padding: 12px 10px;
+  text-transform: none;
+}
+
+.midia-menu ul li + li {
+  border-top: 1px solid var(--black);
+}
+
+.midia-menu ul li a:hover {
+  background: var(--golden);
+}

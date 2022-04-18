@@ -75,7 +75,9 @@ img {
 .sobre,
 .especialidades,
 .posts,
-.contato {
+.contato,
+.especialidade,
+.videos {
   margin-top: 60px;
 }
 
@@ -96,4 +98,53 @@ img {
 
 .sobre .container figure {
   margin-top: 20px;
+}
+
+.especialidade-text p,
+.especialidade-text ul li {
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: var(--questrial);
+  font-size: var(--fontText);
+}
+
+.especialidade-text ul {
+  margin-top: 10px;
+}
+
+.especialidade-text ul li + li {
+  margin-top: 5px;
+}
+
+.especialidade-text ul li {
+  display: flex;
+  align-items: center;
+}
+
+.especialidade-text ul li::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--black);
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.videos .container ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px;
+}
+
+.videos .container ul li {
+  width: calc(33.33% - 40px);
+  margin: 20px;
+}
+
+.videos .container ul li h3 {
+  font-family: var(--poppins);
+  font-size: var(--fontText);
+  line-height: 20px;
+  margin-bottom: 10px;
 }

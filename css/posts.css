@@ -55,3 +55,155 @@
 .nav-blog a:hover {
   text-decoration: underline;
 }
+
+.single-post .header {
+  background: var(--black) !important;
+  padding: 40px 0px;
+}
+
+.single-post .header-main {
+  display: none;
+}
+
+.single-post .header-top {
+  margin-bottom: 0px;
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+
+.post {
+  margin-top: 60px;
+}
+
+.post-container {
+  width: 70%;
+}
+
+.post-container .attachment-post-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.post-container h1 {
+  font-family: var(--poppins);
+  font-size: var(--fontSubtitle);
+  color: var(--blue);
+}
+
+.post-info {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.post-info p {
+  display: flex;
+  align-items: center;
+  font-family: var(--questrial);
+  font-size: var(--fontText);
+  color: var(--gray);
+}
+
+.post-info p + p::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  background: var(--gray);
+  margin: 0px 10px;
+}
+
+.post-text {
+  margin-top: 30px;
+}
+
+.post-text p + p {
+  margin-top: 20px;
+}
+
+.post-text p {
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: var(--questrial);
+  font-size: var(--fontText);
+}
+
+.post-text p em {
+  font-style: italic;
+}
+
+.post-text p strong {
+  text-decoration: underline;
+}
+
+.post-share {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.post-share p {
+  letter-spacing: 1px;
+  font-family: var(--poppins);
+  font-size: var(--fontLegend);
+}
+
+.post-share div {
+  display: flex;
+  margin-left: 5px;
+}
+
+.post-share div a + a {
+  margin-left: 10px;
+}
+
+.post-share div a img {
+  width: 20px;
+}
+
+.post-nav {
+  margin-top: 30px;
+}
+
+.post-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-nav ul li {
+  width: 300px;
+}
+
+.post-nav ul li span:last-child > a {
+  font-family: var(--poppins);
+  color: var(--golden);
+  font-size: var(--fontLegend);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.post-nav ul li h2 {
+  margin-top: 5px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: var(--questrial);
+  font-size: var(--fontText);
+}
+
+.post-nav ul li h2 a {
+  color: var(--blue);
+}
+
+.nav-next .nav-arrow {
+  justify-content: flex-end;
+}
+
+.nav-arrow {
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  padding: 2px 0px;
+  font-family: var(--poppins);
+  color: var(--golden);
+  border-bottom: 1px solid var(--golden);
+}

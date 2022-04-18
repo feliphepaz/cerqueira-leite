@@ -65,6 +65,7 @@ function cmb2_fields_home() {
 		'options' => [
 			'group_title' => 'Especialista {#}',
 			'add_button' => 'Adicionar Especialista',
+			'remove_button' => 'Remover Especialista',
 			'sortable' => true,
 		]
 	]);
@@ -95,6 +96,7 @@ function cmb2_fields_home() {
 		'options' => [
 			'group_title' => 'Especialidade {#}',
 			'add_button' => 'Adicionar Especialidade',
+			'remove_button' => 'Remover Especialidade',
 			'sortable' => true,
 		]
 	]);
@@ -121,6 +123,44 @@ function cmb2_fields_home() {
 		'name' => 'Link',
 		'id' => 'link_especialidade',
 		'type' => 'text_url',
+	]);
+}
+
+add_action('cmb2_admin_init', 'cmb2_fields_videos');
+function cmb2_fields_videos() {
+	$cmb = new_cmb2_box([
+		'id' => 'videos_box',
+		'title' => 'CUSTOM FIELDS DOS VÍDEOS',
+		'object_types' => ['page'],
+		'show_on' => [
+			'key' => 'page-template',
+			'value' => 'page-videos.php',
+		],
+	]);
+
+	$videos = $cmb->add_field([
+		'name' => 'Vídeos',
+		'id' => 'videos',
+		'type' => 'group',
+		'repeatable' => true,
+		'options' => [
+			'group_title' => 'Vídeo {#}',
+			'add_button' => 'Adicionar Vídeo',
+			'remove_button' => 'Remover Vídeo',
+			'sortable' => true,
+		]
+	]);
+
+	$cmb->add_group_field($videos, [
+		'name' => 'Título',
+		'id' => 'titulo_video',
+		'type' => 'text',
+	]);
+
+	$cmb->add_group_field($videos, [
+		'name' => 'Código do Vídeo',
+		'id' => 'codigo_video',
+		'type' => 'text',
 	]);
 }
 
