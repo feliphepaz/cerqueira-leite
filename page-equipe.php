@@ -30,8 +30,8 @@ get_header();
 
     <section class="home-cta">
         <div class="container">
-            <h2 class="title">Comprometidos com seu sucesso</h2>
-            <p>Com uma abordagem equilibrada e moderna, entregamos resultados consistentes, sustentados em 17 anos de experiência no direito corporativo</p>
+            <h2 class="title">Corpo Jurídico</h2>
+            <p>Especializado nas mais diversas áreas do direito corporativo, nosso corpo jurídico é formado por advogados preparados para atender a demanda de sua empresa.</p>
         </div>              
     </section>
 
@@ -57,8 +57,8 @@ get_header();
 
     <section class="home-cta">
         <div class="container">
-            <h2 class="title">Comprometidos com seu sucesso</h2>
-            <p>Com uma abordagem equilibrada e moderna, entregamos resultados consistentes, sustentados em 17 anos de experiência no direito corporativo</p>
+            <h2 class="title">Staff</h2>
+            <p>Altamente capaz, a nossa equipe administrativa atende nossas necessidades internas ou externas, sempre com um atendimento transparente e de altíssima qualidade.</p>
         </div>              
     </section>
 
