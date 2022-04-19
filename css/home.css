@@ -206,3 +206,16 @@
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 400px) {
+  .home-contato .container div {
+    padding: 40px !important;
+  }
+  .home-contato form {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-contato form input {
+    width: 100% !important;
+  }
+}

@@ -148,3 +148,29 @@ img {
   line-height: 20px;
   margin-bottom: 10px;
 }
+
+@media (max-width: 920px) {
+  .list-especialidades li,
+  .posts .container ul li {
+    width: calc(50% - 20px) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .list-especialidades li,
+  .posts .container ul li {
+    width: calc(100% - 20px) !important;
+  }
+}
+
+@media (max-width: 920px) {
+  .videos .container ul li {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .videos .container ul li {
+    width: calc(100% - 40px);
+  }
+}

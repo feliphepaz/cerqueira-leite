@@ -65,10 +65,15 @@
 	<script>
 		const swiper = new Swiper('.swiper', {
 			loop: true,
-			slidesPerView: 2,
+			slidesPerView: 1,
 			pagination: {
 				el: '.swiper-pagination',
 			},
+			breakpoints: {
+				850: {
+				slidesPerView: 2,
+				},
+  			}
 		});
 	</script>
 	<!-- Swiper -->
