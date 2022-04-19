@@ -164,4 +164,79 @@ function cmb2_fields_videos() {
 	]);
 }
 
+add_action('cmb2_admin_init', 'cmb2_fields_equipe');
+function cmb2_fields_equipe() {
+	$cmb = new_cmb2_box([
+		'id' => 'equipe_box',
+		'title' => 'CUSTOM FIELDS DA EQUIPE',
+		'object_types' => ['page'],
+		'show_on' => [
+			'key' => 'page-template',
+			'value' => 'page-equipe.php',
+		],
+	]);
+
+	$juridicos = $cmb->add_field([
+		'name' => 'Slide do Corpo Jurídico',
+		'id' => 'juridicos',
+		'type' => 'group',
+		'repeatable' => true,
+		'options' => [
+			'group_title' => 'Jurídico {#}',
+			'add_button' => 'Adicionar Jurídico',
+			'remove_button' => 'Remover Jurídico',
+			'sortable' => true,
+		]
+	]);
+
+	$cmb->add_group_field($juridicos, [
+		'name' => 'Nome',
+		'id' => 'nome_juridico',
+		'type' => 'text',
+	]);
+
+	$cmb->add_group_field($juridicos, [
+		'name' => 'Descrição',
+		'id' => 'descricao_juridico',
+		'type' => 'textarea',
+	]);
+
+	$cmb->add_group_field($juridicos, [
+		'name' => 'Imagem ',
+		'id' => 'imagem_juridico',
+		'type' => 'file',
+	]);
+
+	$staffs = $cmb->add_field([
+		'name' => 'Slide dos Staffs',
+		'id' => 'staffs',
+		'type' => 'group',
+		'repeatable' => true,
+		'options' => [
+			'group_title' => 'Staff {#}',
+			'add_button' => 'Adicionar Staff',
+			'remove_button' => 'Remover Staff',
+			'sortable' => true,
+		]
+	]);
+
+	$cmb->add_group_field($staffs, [
+		'name' => 'Nome',
+		'id' => 'nome_staff',
+		'type' => 'text',
+	]);
+
+	$cmb->add_group_field($staffs, [
+		'name' => 'Descrição',
+		'id' => 'descricao_staff',
+		'type' => 'textarea',
+	]);
+
+	$cmb->add_group_field($staffs, [
+		'name' => 'Imagem ',
+		'id' => 'imagem_staff',
+		'type' => 'file',
+	]);
+}
+
 ?>

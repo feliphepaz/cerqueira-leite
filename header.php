@@ -63,7 +63,7 @@
 				<?php if (is_page_template('page-home.php')) { ?>
 					<h1>Excelência em Direito Corporativo</h1>
 					<p>Com uma abordagem equilibrada e moderna entregamos resultados consistentes</p>
-					<a class="cta" href="">Fale com um advogado</a>	
+					<a class="cta" href="/cerqueiraleite/contato">Fale com um advogado</a>	
 				<?php } ?>	
 
 				<?php if (is_page_template('page-sobre.php')) { ?>
@@ -92,7 +92,7 @@
 					<h1>Fale com um especialista</h1>
 				<?php } ?>
 
-				<?php if (is_page_template('page-especialidade.php')) { ?>
+				<?php if (is_page_template('page-especialidade.php') || is_page_template('page-privacidade.php')) { ?>
 					<h1><?php the_title() ?></h1>
 				<?php } ?>
 

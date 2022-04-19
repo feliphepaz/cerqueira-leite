@@ -40,12 +40,12 @@ get_header();
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <?php
-                    $especialistas = get_field('especialistas', '8');
-                    if (isset($especialistas)) { foreach ($especialistas as $especialista) { ?> 
-                        <div style="background: url('<?= $especialista['imagem_especialista']; ?>') no-repeat center center" class="swiper-slide">
+                    $juridicos = get_field('juridicos');
+                    if (isset($juridicos)) { foreach ($juridicos as $juridico) { ?> 
+                        <div style="background: url('<?= $juridico['imagem_juridico']; ?>') no-repeat center center" class="swiper-slide">
                             <div>
-                                <h3><?= $especialista['nome_especialista']; ?></h3>
-                                <p><?= $especialista['descricao_especialista']; ?></p>
+                                <h3><?= $juridico['nome_juridico']; ?></h3>
+                                <p><?= $juridico['descricao_juridico']; ?></p>
                             </div>
                         </div>
                     <?php } } ?>
@@ -67,12 +67,12 @@ get_header();
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <?php
-                    $especialistas = get_field('especialistas', '8');
-                    if (isset($especialistas)) { foreach ($especialistas as $especialista) { ?> 
-                        <div style="background: url('<?= $especialista['imagem_especialista']; ?>') no-repeat center center" class="swiper-slide">
+                    $staffs = get_field('staffs');
+                    if (isset($staffs)) { foreach ($staffs as $staff) { ?> 
+                        <div style="background: url('<?= $staff['imagem_staff']; ?>') no-repeat center center" class="swiper-slide">
                             <div>
-                                <h3><?= $especialista['nome_especialista']; ?></h3>
-                                <p><?= $especialista['descricao_especialista']; ?></p>
+                                <h3><?= $staff['nome_staff']; ?></h3>
+                                <p><?= $staff['descricao_staff']; ?></p>
                             </div>
                         </div>
                     <?php } } ?>

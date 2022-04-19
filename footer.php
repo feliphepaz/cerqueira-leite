@@ -45,7 +45,8 @@
 				</p>
 			</div>
 			<div>
-				<a href="">Política de Privacidade</a>
+				<a href="/cerqueiraleite/politica-de-privacidade">Política de Privacidade</a>
+				<a href="https://www.claataxassessment.com.br/" target="_blank">CLA Tax Assessment</a>
 			</div>
 		</div>
 	</footer>
@@ -55,6 +56,15 @@
 			<legend>Desenvolvido por Formulaviral - Todos os direitos reservados - 2021.</legend>
 		</div>
 	</section>
+
+	<div class='cookie-container'>
+      <div class='cookie'>
+        <p>Permito o uso de cookies para:</p>
+        <label for="marketing"><input type="checkbox" name='marketing' id="marketing" checked>Análise de Marketing</label>
+        <label for="analytics"><input type="checkbox" name='analytics' id="analytics" checked>Analytics</label>
+      </div>
+      <button class='cta'>Salvar & Continuar</button>
+    </div>
 	
 	<!-- Footer do Wordpress -->
 	<?php wp_footer(); ?>

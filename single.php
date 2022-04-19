@@ -60,7 +60,5 @@ get_header();
 <?php endwhile; else: ?>
 <p><?php _e('Post não encontrado'); ?></p>
 <?php endif; ?>
-    <?php wp_footer(); ?>
-</body>
-</html>
+
 <?php get_footer(); ?>

@@ -49,6 +49,13 @@ img {
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.cta:hover {
+  box-shadow: 0px 0px 20px var(--golden);
+  transition: 0.2s;
 }
 
 .title {
@@ -72,31 +79,43 @@ img {
   border-radius: 10px;
 }
 
+.btn:hover {
+  background: var(--blue);
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: 0.2s;
+}
+
 .sobre,
 .especialidades,
 .posts,
 .contato,
 .especialidade,
-.videos {
+.videos,
+.privacidade {
   margin-top: 60px;
 }
 
-.sobre .container p {
+.sobre .container p,
+.privacidade .container p {
   line-height: 20px;
   letter-spacing: 1px;
   font-family: var(--questrial);
   font-size: var(--fontText);
 }
 
-.sobre .container p strong {
+.sobre .container p strong,
+.privacidade .container p strong {
   color: var(--blue);
 }
 
-.sobre .container p + p {
+.sobre .container p + p,
+.privacidade .container p + p {
   margin-top: 20px;
 }
 
-.sobre .container figure {
+.sobre .container figure,
+.privacidade .container figure {
   margin-top: 20px;
 }
 

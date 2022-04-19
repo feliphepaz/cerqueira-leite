@@ -207,6 +207,11 @@
   cursor: pointer;
 }
 
+.home-contato form input[type="submit"]:hover {
+  box-shadow: 0px 0px 20px var(--golden);
+  transition: 0.2s;
+}
+
 @media (max-width: 400px) {
   .home-contato .container div {
     padding: 40px !important;

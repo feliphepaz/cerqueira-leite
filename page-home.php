@@ -24,7 +24,7 @@ get_header();
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-            <a class="btn" href="">Ver toda a equipe</a>
+            <a class="btn" href="/cerqueiraleite/equipe">Ver toda a equipe</a>
         </div>
     </section>
 
@@ -32,7 +32,7 @@ get_header();
         <div class="container">
             <h2 class="title">Comprometidos com seu sucesso</h2>
             <p>Com uma abordagem equilibrada e moderna, entregamos resultados consistentes, sustentados em 17 anos de experiência no direito corporativo</p>
-            <a class="cta" href="">Entre em contato</a>
+            <a class="cta" href="/cerqueiraleite/contato">Entre em contato</a>
         </div>              
     </section>
 
@@ -53,7 +53,7 @@ get_header();
                 </li>
                 <?php } } ?>
             </ul>
-            <a class="btn" href="">Ver mais</a>
+            <a class="btn" href="/cerqueiraleite/especialidades">Ver mais</a>
         </div>
     </section>
 
