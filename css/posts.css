@@ -90,6 +90,12 @@
   color: var(--blue);
 }
 
+.post-container h2 {
+  font-family: var(--poppins);
+  color: var(--blue);
+  margin: 20px 0px;
+}
+
 .post-info {
   display: flex;
   margin-top: 15px;
