@@ -34,7 +34,7 @@
 	<?php } ?>
 		<div class="container">
 			<div class="header-top">
-				<a href="/cerqueiraleite"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-cerqueira.png" alt=""></a>
+				<a href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-cerqueira.png" alt=""></a>
 				<nav class="header-menu">
 					<?php
 						$args = array(
