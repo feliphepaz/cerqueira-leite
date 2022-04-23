@@ -150,6 +150,10 @@ img {
   border-radius: 100%;
 }
 
+.especialidade .btn {
+  margin-top: 20px;
+}
+
 .videos .container ul {
   display: flex;
   flex-wrap: wrap;
@@ -191,5 +195,24 @@ img {
 @media (max-width: 600px) {
   .videos .container ul li {
     width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 490px) {
+  .header-main h1 {
+    font-size: var(--fontTitle) !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .title,
+  .home-contato h3 {
+    font-size: var(--fontSubtitle) !important;
+  }
+}
+
+@media (max-width: 345px) {
+  .header-main h1 {
+    font-size: 34px !important;
   }
 }

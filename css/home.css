@@ -98,6 +98,7 @@
   font-family: var(--questrial);
   font-size: var(--fontSubtitle);
   color: var(--white);
+  text-align: center;
 }
 
 .home-especialidade-detail {

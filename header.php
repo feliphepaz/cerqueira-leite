@@ -28,7 +28,7 @@
 
 <body <?php body_class(); ?>>
 	<?php if (is_page_template('page-especialidade.php')) { ?>
-		<header class="header" style="background: url('<?= the_post_thumbnail_url() ?>') center center no-repeat; background-size: cover">
+		<header class="header" style="background: linear-gradient(0deg, rgba(0, 54, 105, 0.9), rgba(0, 54, 105, 0.9)), url('<?= the_post_thumbnail_url() ?>') center center no-repeat; background-size: cover">
 	<?php } else { ?>
 		<header class="header">
 	<?php } ?>
