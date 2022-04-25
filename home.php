@@ -10,7 +10,7 @@ get_header();
             $args = array(
                 'post_type' => 'post',
                 'category_name' => 'Artigos',
-                'order' => 'ASC',
+                'order' => 'DESC',
                 'paged' => $paged
             );
             $posts = new WP_Query($args);

@@ -13,7 +13,7 @@ get_header();
             $args = array(
                 'post_type' => 'post',
                 'category_name' => 'Saiu na Imprensa',
-                'order' => 'ASC',
+                'order' => 'DESC',
                 'paged' => $paged
             );
             $posts = new WP_Query($args);
