@@ -9,20 +9,19 @@ get_header();
     <section class="home-especialistas">
         <div class="container">
             <h2 class="title">Nossos Especialistas</h2>
-            <div class="swiper">
-                <div class="swiper-wrapper">
+            <div class="slide" id="slide-lideres">
+                <ul>
                     <?php
                     $especialistas = get_field('especialistas');
                     if (isset($especialistas)) { foreach ($especialistas as $especialista) { ?> 
-                        <div style="background: url('<?= $especialista['imagem_especialista']; ?>') no-repeat center center" class="swiper-slide">
+                        <li style="background: url('<?= $especialista['imagem_especialista']; ?>') no-repeat center center">
                             <div>
                                 <h3><?= $especialista['nome_especialista']; ?></h3>
                                 <p><?= $especialista['descricao_especialista']; ?></p>
                             </div>
-                        </div>
+                        </li>
                     <?php } } ?>
-                </div>
-                <div class="swiper-pagination"></div>
+                    </ul>
             </div>
             <a class="btn" href="/cerqueiraleite/equipe">Ver toda a equipe</a>
         </div>

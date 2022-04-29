@@ -10,20 +10,19 @@ get_header();
         <div class="container">
             <h2 class="title">Líderes</h2>
             <p class="lideres-text">Cinco Heads tomam a frente das áreas de atuação do escritório, tomando decisões importantes e direcionando os casos com base em suas vastas experiências.</p>
-            <div class="swiper">
-                <div class="swiper-wrapper">
+            <div class="slide" id="slide-lideres">
+                <ul>
                     <?php
                     $especialistas = get_field('especialistas', '8');
                     if (isset($especialistas)) { foreach ($especialistas as $especialista) { ?> 
-                        <div style="background: url('<?= $especialista['imagem_especialista']; ?>') no-repeat center center" class="swiper-slide">
+                        <li style="background: url('<?= $especialista['imagem_especialista']; ?>') no-repeat center center">
                             <div>
                                 <h3><?= $especialista['nome_especialista']; ?></h3>
                                 <p><?= $especialista['descricao_especialista']; ?></p>
                             </div>
-                        </div>
+                        </li>
                     <?php } } ?>
-                </div>
-                <div class="swiper-pagination"></div>
+                    </ul>
             </div>
         </div>
     </section> 
@@ -37,20 +36,19 @@ get_header();
 
     <section class="lideres">
         <div class="container">
-            <div class="swiper">
-                <div class="swiper-wrapper">
+            <div class="slide" id="slide-juridico">
+                <ul>
                     <?php
                     $juridicos = get_field('juridicos');
                     if (isset($juridicos)) { foreach ($juridicos as $juridico) { ?> 
-                        <div style="background: url('<?= $juridico['imagem_juridico']; ?>') no-repeat center center" class="swiper-slide">
+                        <li style="background: url('<?= $juridico['imagem_juridico']; ?>') no-repeat center center">
                             <div>
                                 <h3><?= $juridico['nome_juridico']; ?></h3>
                                 <p><?= $juridico['descricao_juridico']; ?></p>
                             </div>
-                        </div>
+                        </li>
                     <?php } } ?>
-                </div>
-                <div class="swiper-pagination"></div>
+                </ul>
             </div>
         </div>
     </section> 
@@ -64,20 +62,19 @@ get_header();
 
     <section class="lideres">
         <div class="container">
-            <div class="swiper">
-                <div class="swiper-wrapper">
+            <div class="slide" id="slide-staff">
+                <ul>
                     <?php
                     $staffs = get_field('staffs');
                     if (isset($staffs)) { foreach ($staffs as $staff) { ?> 
-                        <div style="background: url('<?= $staff['imagem_staff']; ?>') no-repeat center center" class="swiper-slide">
+                        <li style="background: url('<?= $staff['imagem_staff']; ?>') no-repeat center center">
                             <div>
                                 <h3><?= $staff['nome_staff']; ?></h3>
                                 <p><?= $staff['descricao_staff']; ?></p>
                             </div>
-                        </div>
+                        </li>
                     <?php } } ?>
-                </div>
-                <div class="swiper-pagination"></div>
+                </ul>
             </div>
         </div>
     </section> 
