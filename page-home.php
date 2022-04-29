@@ -23,6 +23,21 @@ get_header();
                     <?php } } ?>
                     </ul>
             </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <?php
+                    $especialistas = get_field('especialistas');
+                    if (isset($especialistas)) { foreach ($especialistas as $especialista) { ?> 
+                        <div style="background: url('<?= $especialista['imagem_especialista']; ?>') no-repeat center center" class="swiper-slide">
+                            <div>
+                                <h3><?= $especialista['nome_especialista']; ?></h3>
+                                <p><?= $especialista['descricao_especialista']; ?></p>
+                            </div>
+                        </div>
+                    <?php } } ?>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
             <a class="btn" href="/cerqueiraleite/equipe">Ver toda a equipe</a>
         </div>
     </section>
